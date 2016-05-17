@@ -133,8 +133,9 @@
                               </video>
                            </div>
                            <div class="center-block">
+                              <input type="file" id="videoFileLoader" class="hidden">
                               <div class="btn-group">
-                                 <button type="button" class="btn btn-default">
+                                 <button type="button" class="btn btn-default" onclick="$('#videoFileLoader').click();">
                                     <i class="fa fa-eject"></i> Cargar
                                  </button>
                                  <button type="button" class="btn btn-default">
@@ -149,7 +150,7 @@
                                  <div class="btn-group">
                                     <button type="button" class="btn btn-default dropdown-toggle"
                                             data-toggle="dropdown">
-                                       <i class="fa fa-clock-o"></i> Velocidad (x1)
+                                       <i class="fa fa-clock-o"></i> Veloc. (x1)
                                        <i class="fa fa-angle-down"></i>
                                     </button>
                                     <ul class="dropdown-menu">
@@ -245,13 +246,16 @@
                            <thead>
                            <tr>
                               <th>
-                                 <i class="fa fa-briefcase"></i> Fecha
+                                 <i class="fa fa-calendar-check-o"></i> Fecha
                               </th>
                               <th class="hidden-xs">
-                                 <i class="fa fa-user"></i> Contact
+                                 <i class="fa  fa-hourglass-o"></i> Tiempo
+                              </th>
+                              <th class="hidden-xs">
+                                 <i class="fa fa-television"></i> Frame
                               </th>
                               <th>
-                                 <i class="fa fa-shopping-cart"></i> Total
+                                 <i class="fa fa-odnoklassniki"></i> Info
                               </th>
                               <th></th>
                            </tr>
@@ -260,10 +264,29 @@
                            <tr>
                               <td class="highlight">
                                  <div class="warning"></div>
-                                 <a href="javascript:;"> 17/05/2016 </a>
+                                 <a href="javascript:;"> 17/05/2016 15:00 </a>
                               </td>
-                              <td class="hidden-xs"> Nick</td>
-                              <td> 2560.60$</td>
+                              <td class="hidden-xs"> 16,52 s</td>
+                              <td> xxx fr.</td>
+                              <td> Grupo C: Rojo, Azul, Amarillo <br>
+                                 Grupo S: Feliz
+                              </td>
+                              <td>
+                                 <a href="javascript:;" class="btn btn-outline btn-circle red btn-sm blue">
+                                    <i class="fa fa-share"></i> Play </a>
+                                 <a href="javascript:;" class="btn btn-outline btn-circle dark btn-sm black">
+                                    <i class="fa fa-trash-o"></i> Delete </a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="highlight">
+                                 <div class="warning"></div>
+                                 <a href="javascript:;"> 18/05/2016 15:00 </a>
+                              </td>
+                              <td class="hidden-xs"> 19,52 s</td>
+                              <td> xxx fr.</td>
+                              <td> Grupo C: Amarillo
+                              </td>
                               <td>
                                  <a href="javascript:;" class="btn btn-outline btn-circle red btn-sm blue">
                                     <i class="fa fa-share"></i> Play </a>
